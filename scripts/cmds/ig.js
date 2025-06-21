@@ -5,7 +5,7 @@ const path = require("path");
 
 module.exports = {
   config: {
-    name: "ig",
+    name: "?",
     version: "1.2",
     author: "MR᭄﹅ MAHABUB﹅ メꪜ",
     countDown: 5,
@@ -23,7 +23,7 @@ module.exports = {
 
   onChat: async function ({ api, event }) {
     const body = event.body?.toLowerCase().trim();
-    if (body === "/" || body === "/") {
+    if (body === "?" || body === "?") {
       return sendQuoteWithImage(api, event);
     }
   }
